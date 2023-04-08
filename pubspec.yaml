@@ -2,7 +2,6 @@ name: hover_menu
 description: web style hover menu.
 version: 1.0.0+1
 homepage: https://github.com/doonfrs/hover_menu
-publish_to: https://pub.dev
 screenshots:
   - description: 'Live Example'
     path: example/assets/example.gif
