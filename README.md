@@ -1,6 +1,9 @@
 ## Hover Menu for Flutter
 A Flutter package for creating a hover menu for desktop and web applications, providing a common web menu experience.
 
+![Hover Menu Usage Example](https://raw.githubusercontent.com/doonfrs/hover_menu/cb0f0abda152ccfaf05fb9f075f9a8a903c406f9/example/assets/example.gif
+)
+
 ### Features
 - Easy-to-use hover menu that appears when the user hovers over a specified title widget
 - Closes the menu when the user stops hovering over the menu or its items
