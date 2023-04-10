@@ -1,5 +1,5 @@
 name: hover_menu
-description: web style hover menu.
+description: A Flutter package for creating a hover menu for desktop and web applications, providing a common web menu experience.
 version: 1.0.0+1
 homepage: https://github.com/doonfrs/hover_menu
 screenshots:
