@@ -95,6 +95,49 @@ class MyApp extends StatelessWidget {
 }
 ```
 
+
+### Limitation
+- I do not recommend using this package for mobile applications, as the standard Drawer and AppBar provide a better user experience. Consider using an 'if' condition.
+Something like:
+```dart
+bool isDesktopOrWeb() {
+  if (kIsWeb) {
+    return true;
+  }
+  if (Platform.isWindows || Platform.isMacOS || Platform.isLinux) {
+    return true;
+  }
+
+  return false;
+}
+```
+And in your build:
+```dart
+Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: isDesktopOrWeb() ? null : AppBar(title: Text('Conditional Widget Example')),
+        drawer: isDesktopOrWeb() ? null : MyDrawer(),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (isDesktopOrWeb()) HoverMenu(
+                  title: Text('Menu Title'),
+                  items: [
+                    ListTile(title: Text('Item 1')),
+                    ListTile(title: Text('Item 2')),
+                    ListTile(title: Text('Item 3')),
+                  ],
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+```
+
 ### Developer
 This package is developed by Feras Abdalrahman.
 
