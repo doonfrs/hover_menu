@@ -7,3 +7,6 @@
 
 # 1.0.1+2
 * Update the readme file to include the limitation for mobile devices
+
+# 1.0.1+3
+* Apply flutter_lint rules
