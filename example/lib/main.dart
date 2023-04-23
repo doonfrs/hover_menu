@@ -46,11 +46,10 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 50,
             child: Row(
               mainAxisSize: MainAxisSize.min,
-              children: [
+              children: const [
                 HoverMenu(
-                  title:
-                      const Text('Main', style: TextStyle(color: Colors.black)),
-                  items: const [
+                  title: Text('Main', style: TextStyle(color: Colors.black)),
+                  items: [
                     ListTile(
                       mouseCursor: SystemMouseCursors.click,
                       title: Text(
@@ -68,9 +67,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 HoverMenu(
-                  title: const Text('Menu 2',
-                      style: TextStyle(color: Colors.black)),
-                  items: const [
+                  title: Text('Menu 2', style: TextStyle(color: Colors.black)),
+                  items: [
                     ListTile(
                       mouseCursor: SystemMouseCursors.click,
                       title: Text(
@@ -87,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-                const VerticalDivider(
+                VerticalDivider(
                   width: 2,
                   thickness: 1,
                   color: Colors.white,

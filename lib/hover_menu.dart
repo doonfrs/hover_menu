@@ -7,7 +7,7 @@ class HoverMenu extends StatefulWidget {
   final double? width;
   final List<Widget> items;
 
-  HoverMenu({
+  const HoverMenu({
     Key? key,
     required this.title,
     this.items = const [],
@@ -15,10 +15,10 @@ class HoverMenu extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _HoverMenuState createState() => _HoverMenuState();
+  HoverMenuState createState() => HoverMenuState();
 }
 
-class _HoverMenuState extends State<HoverMenu> {
+class HoverMenuState extends State<HoverMenu> {
   OverlayEntry? _overlayEntry;
   final _focusNode = FocusNode();
   bool _isHovered = false;
