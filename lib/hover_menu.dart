@@ -2,16 +2,20 @@ library hover_menu;
 
 import 'package:flutter/material.dart';
 
+import 'hover_menu_controller.dart';
+
 class HoverMenu extends StatefulWidget {
   final Widget title;
   final double? width;
   final List<Widget> items;
+  final HoverMenuController? controller;
 
   const HoverMenu({
     Key? key,
     required this.title,
     this.items = const [],
     this.width,
+    this.controller,
   }) : super(key: key);
 
   @override
@@ -27,6 +31,10 @@ class HoverMenuState extends State<HoverMenu> {
   void initState() {
     super.initState();
     _focusNode.addListener(_onFocusChanged);
+
+    if (widget.controller != null) {
+      widget.controller?.currentState = this;
+    }
   }
 
   @override
@@ -47,6 +55,10 @@ class HoverMenuState extends State<HoverMenu> {
 
   void _removeOverlay() {
     _isHovered = false;
+  }
+
+  void hideSubMenu() {
+    _focusNode.unfocus();
   }
 
   @override
@@ -76,20 +88,18 @@ class HoverMenuState extends State<HoverMenu> {
         top: offset.dy + size.height,
         width: widget.width ?? 200,
         child: TextButton(
-          onPressed: () {},
-          onHover: (isHovered) {
-            if (isHovered && _isHovered) {
-              _focusNode.requestFocus();
-            } else {
-              _focusNode.unfocus();
-            }
-          },
-          child: ListView(
-            padding: EdgeInsets.zero,
-            shrinkWrap: true,
-            children: widget.items,
-          ),
-        ),
+            onPressed: () {},
+            onHover: (isHovered) {
+              if (isHovered && _isHovered) {
+                _focusNode.requestFocus();
+              } else {
+                _focusNode.unfocus();
+              }
+            },
+            child: ListView(
+                padding: EdgeInsets.zero,
+                shrinkWrap: true,
+                children: widget.items)),
       ),
     );
   }
