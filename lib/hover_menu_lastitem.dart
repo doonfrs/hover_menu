@@ -5,12 +5,12 @@ The dropdown position starts from the
 remaining screen portion and end exactly where the option item name ends.
  */
 import 'package:flutter/material.dart';
-class HoverMenu1 extends StatefulWidget {
+class HoverMenuLastItem extends StatefulWidget {
   final Widget title;
   final double? width;
   final List<Widget> items;
 
-  const HoverMenu1({
+  const HoverMenuLastItem({
     Key? key,
     required this.title,
     this.items = const [],
@@ -18,10 +18,10 @@ class HoverMenu1 extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  HoverMenu1State createState() => HoverMenu1State();
+  HoverMenuLastItemState createState() => HoverMenuLastItemState();
 }
 
-class HoverMenu1State extends State<HoverMenu1> {
+class HoverMenuLastItemState extends State<HoverMenuLastItem> {
   OverlayEntry? _overlayEntry;
   final _focusNode = FocusNode();
   bool _isHovered = false;
