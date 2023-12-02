@@ -10,3 +10,6 @@
 
 # 1.0.1+3
 * Apply flutter_lint rules
+
+# 1.0.1+4
+* add HoverMenuLastItem, update pubspec.yaml packages
