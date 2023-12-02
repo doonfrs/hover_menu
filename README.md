@@ -98,7 +98,7 @@ Using HoverMenuLastItem
 If we have five menu items that are horizontally aligned and need to provide dropdown options for the last menu item, the dropdown size extends beyond the screen boundaries. To address this issue, I am working on a solution where the dropdown portion aligns precisely with the end of the menu option and stretches towards the opposite side. Users can call the new class specifically for the last menu option.
 
 As shown in the screenshot, the dropdown position for the last menu item was previously extending beyond the screen boundaries. I resolved this by adjusting the positioning exclusively for the last menu option.
-![Last Menu Usage Example](https://raw.githubusercontent.com/doonfrs/hover_menu/cb0f0abda152ccfaf05fb9f075f9a8a903c406f9/example/assets/example.gif)
+![Last Menu Usage Example](https://raw.githubusercontent.com/doonfrs/hover_menu/main/example/assets/example-last-item.png)
 Instead of using HoverMenu class for the last menu item, use HoverMenuLastItem.
 ```dart
 HoverMenuLastItem(
