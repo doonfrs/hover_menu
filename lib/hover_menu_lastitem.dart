@@ -1,10 +1,9 @@
-
-
 /* A new file for the last menu option to make it's drop down position not go beyond screen size.
 The dropdown position starts from the
 remaining screen portion and end exactly where the option item name ends.
  */
 import 'package:flutter/material.dart';
+
 class HoverMenuLastItem extends StatefulWidget {
   final Widget title;
   final double? width;
@@ -75,7 +74,7 @@ class HoverMenuLastItemState extends State<HoverMenuLastItem> {
     return OverlayEntry(
       maintainState: true,
       builder: (context) => Positioned(
-        right: offset.dy-size.width,
+        right: offset.dy - size.width,
         top: offset.dy + size.height,
         width: widget.width ?? 200,
         child: TextButton(
@@ -87,12 +86,10 @@ class HoverMenuLastItemState extends State<HoverMenuLastItem> {
               _focusNode.unfocus();
             }
           },
-          child: Container(
-            child: ListView(
-              padding: EdgeInsets.zero,
-              shrinkWrap: true,
-              children: widget.items,
-            ),
+          child: ListView(
+            padding: EdgeInsets.zero,
+            shrinkWrap: true,
+            children: widget.items,
           ),
         ),
       ),

@@ -44,9 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 border:
                     Border(bottom: BorderSide(color: Colors.black, width: 1))),
             height: 50,
-            child: Row(
+            child: const Row(
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
                 HoverMenu(
                   title: Text('Main', style: TextStyle(color: Colors.black)),
                   items: [

@@ -13,3 +13,6 @@
 
 # 1.1.0
 * add HoverMenuLastItem, update pubspec.yaml packages
+
+# 1.1.1
+* update readme, code optimization
