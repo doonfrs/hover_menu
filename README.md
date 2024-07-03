@@ -1,4 +1,6 @@
 ## Hover Menu for Flutter
+Please give this repo a star ⭐ if you found the script useful.
+
 A Flutter package for creating a hover menu for desktop and web applications, providing a common web menu experience.
 
 ![Hover Menu Usage Example](https://raw.githubusercontent.com/doonfrs/hover_menu/cb0f0abda152ccfaf05fb9f075f9a8a903c406f9/example/assets/example.gif)
