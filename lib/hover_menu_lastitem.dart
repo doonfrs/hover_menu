@@ -10,11 +10,11 @@ class HoverMenuLastItem extends StatefulWidget {
   final List<Widget> items;
 
   const HoverMenuLastItem({
-    Key? key,
+    super.key,
     required this.title,
     this.items = const [],
     this.width,
-  }) : super(key: key);
+  });
 
   @override
   HoverMenuLastItemState createState() => HoverMenuLastItemState();

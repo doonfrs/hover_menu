@@ -1,4 +1,4 @@
-library hover_menu;
+library;
 
 import 'package:flutter/material.dart';
 
@@ -11,12 +11,12 @@ class HoverMenu extends StatefulWidget {
   final HoverMenuController? controller;
 
   const HoverMenu({
-    Key? key,
+    super.key,
     required this.title,
     this.items = const [],
     this.width,
     this.controller,
-  }) : super(key: key);
+  });
 
   @override
   HoverMenuState createState() => HoverMenuState();
