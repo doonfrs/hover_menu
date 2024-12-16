@@ -16,3 +16,6 @@
 
 # 1.1.1
 * update readme, code optimization
+
+# 1.1.2
+* Upgrade sdk & packages
