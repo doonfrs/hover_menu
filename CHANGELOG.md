@@ -19,3 +19,6 @@
 
 # 1.1.2
 * Upgrade sdk & packages
+
+# 1.2.1
+* Upgrade sdk & packages

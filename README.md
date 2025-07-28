@@ -14,7 +14,7 @@ A Flutter package for creating a hover menu for desktop and web applications, pr
 To use this package, add hover_menu as a dependency in your pubspec.yaml file.
 ```yaml
 dependencies:
-  hover_menu: ^1.1.2
+  hover_menu: ^1.2.1
 ```
 Then, run flutter packages get in your terminal.
 
